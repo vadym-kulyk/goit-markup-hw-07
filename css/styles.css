@@ -64,28 +64,6 @@ button {
   color: var(--primary-text-color);
 }
 
-.advantage-list {
-  display: flex;
-  column-gap: 30px;
-
-  justify-content: space-around;
-}
-
-
-.features-icon-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: #F5F4FA;
-  border-radius: 4px;
-}
-.features-icon {
-  width: 70px;
-  height: 70px;}
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -124,7 +102,7 @@ button {
 /* телефон та імейл вгорі різний колір */
 /* телефон та імейл внизу однакові */
 
-.phone {
+.contacts__item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -137,18 +115,18 @@ button {
     transition: color 250ms var(--timing-function), fill 250ms var(--timing-function);
     
 }
-.phone:hover,
-.phone:focus
+.contacts__item:hover,
+.contacts__item:focus
  {
   color: var(--accent-color);}
 
 
-  .phone:hover .address-icon, 
-  .phone:focus .address-icon {
+  .contacts__item:hover .address-icon, 
+  .contacts__item:focus .address-icon {
     fill: var(--accent-color);
 
 }
-.phone:active {
+.contacts__item:active {
   color: var(--accent-color);
 }
 
@@ -227,7 +205,7 @@ button {
 
 
 
-.hero-block {
+.hero {
   background-color: var(--bg-for-footer);
   text-align: center;
   align-items: center;
@@ -243,7 +221,7 @@ button {
   }
 
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -258,11 +236,31 @@ button {
   margin-left: auto;
 }
 
-.advantage-list {
+
+.features-list {
   display: flex;
   column-gap: 30px;
+
+  justify-content: space-around;
 }
-.advantage {
+
+
+.features-list__icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+}
+.features-list__icon {
+  width: 70px;
+  height: 70px;}
+
+
+.features__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -275,11 +273,11 @@ button {
 /* .advantage-list-item:not(:last-child) {
     margin-right: 30px;}*/
 
-.advantage-list li:nth-last-child(-n + 4) {
+.features-list li:nth-last-child(-n + 4) {
   flex-basis: 270px;
 }
 
-.usual-text {
+.features__description {
   font-size: 14px;
   line-height: 1.7;
   /* or 171% */
@@ -310,7 +308,7 @@ button {
   column-gap: 30px;
 }
 
-.team-title {
+.team__member-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -320,7 +318,7 @@ button {
 
   margin-bottom: 10px;
 }
-.our-team-list-item {
+.team-list__item {
   width: 270px;
     background-color: var(--bg-color-second);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -330,7 +328,7 @@ button {
 .list {
   list-style: none;
 }
-.team-position {
+.team__position {
   font-size: 16px;
   line-height: 1.18;
   /* identical to box height */
@@ -340,7 +338,7 @@ button {
   color: var(--second-color);
   }
 
-.card-description {
+.team__member-card {
   padding: 30px;0
 }
 
@@ -349,7 +347,7 @@ button {
   justify-content: space-between; 
 }
 
-.social-list-link {
+.social-list__link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -360,27 +358,27 @@ button {
   transition: fill 250ms var(--timing-function), color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 
 }
-.social-list-icon {
+.social-list__icon {
 width: 20px;
 height: 20px;
 transition: fill 250ms var(--timing-function);
 }
 
 
-.social-list-item {
+.social-list__item {
   list-style: none;
   width: 44px;
   height: 44px;
 }
 
 
-.social-list-link:hover,
-.social-list-link:focus {
+.social-list__link:hover,
+.social-list__link:focus {
   background-color:  var(--accent-color);
   color: var(--bg-color-main);
 }
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon {
   fill: #ffffff;
 }
 
@@ -389,7 +387,7 @@ transition: fill 250ms var(--timing-function);
   justify-content: space-between;
 }
 
-.clients-list-item {
+.clients-list__item {
   height: 90px;
   width: calc(100% /6 - 30px);
   
@@ -400,7 +398,7 @@ transition: fill 250ms var(--timing-function);
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.clients-link {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -417,18 +415,18 @@ transition: fill 250ms var(--timing-function);
 
 
 
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon {
   fill: var(--accent-color);
   
 }
 
-.clients-link:hover, 
-.clients-link:focus { 
+.clients__link:hover, 
+.clients__link:focus { 
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
-.clients-icon {
+.clients__icon {
   width: 106px;
   height: 60px;
   fill: #AFB1B8;
@@ -472,22 +470,22 @@ transition: fill 250ms var(--timing-function);
   column-gap: 50px;
 }
 
-.ourservice-section {
+.service {
   align-items: center;
   padding-top: 0px;
   
 }
-.ourservice {
+.service__list {
   display: flex;
   column-gap: 30px;
 }
 
-.ourservice-item {
+.service__item {
   position: relative;
 }
 
 
-.service-description {
+.service__description {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: bold;
@@ -511,7 +509,7 @@ transition: fill 250ms var(--timing-function);
 
 
 /* ставимо на а */
-.navigation-link {
+.menu__link {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -523,12 +521,12 @@ transition: fill 250ms var(--timing-function);
   position: relative;
 }
 
-.navigation-link:hover,
-.navigation-link:focus {
+.menu__link:hover,
+.menu__link:focus {
   color: var(--accent-color);
 }
 
-.navigation-link:active {
+.menu__link:active {
   color: var(--accent-color);
 }
 .current {
@@ -536,7 +534,7 @@ transition: fill 250ms var(--timing-function);
 }
 
 
-.navigation-link.current::after {
+.menu__link.current::after {
   display: block;
   position: absolute;
   bottom: 0px;
@@ -734,7 +732,7 @@ transition: fill 250ms var(--timing-function);
 }
 
 /* стилі футера*/
-.bottom-style {
+.footer {
   background-color: var(--bg-for-footer);
   padding-bottom: 60px;
   padding-top: 60px;
