@@ -647,7 +647,7 @@ transition: fill 250ms var(--timing-function);
   background-color: var(--accent-color);
 }
 /*кнопка на головній в герої*/
-.primary-button {
+.hero-button {
   font-family: inherit;
   color: var(--bg-color-second);
   background-color: var(--accent-color);
