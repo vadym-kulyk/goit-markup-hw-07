@@ -7,11 +7,6 @@
     margin-right: 30px;
   }
 
-
-
-
-
-
   &__icon-box {
     display: flex;
     justify-content: center;
@@ -48,11 +43,9 @@
   margin-top: 0px;
 }
 
-
 .service {
   align-items: center;
   padding-top: 0px;
-  
 }
 .service__list {
   display: flex;
@@ -62,7 +55,6 @@
 .service__item {
   position: relative;
 }
-
 
 .service__description {
   font-family: $main-font;

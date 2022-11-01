@@ -10,17 +10,17 @@
 }
 
 /*:root {
-  --primary-text-color: #212121;
-  --accent-color: #2196f3;
-  --second-color: #757575;
-  --color-icon: #AFB1B8;
-  --bg-color-main: #f5f5f5;
-  --bg-color-second: #ffffff;
-  --bg-for-button: #f5f4fa;
-  --bg-for-footer: #2f303a;
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --main-font: "Roboto", sans-serif;
-}*/
+    --primary-text-color: #212121;
+    --accent-color: #2196f3;
+    --second-color: #757575;
+    --color-icon: #AFB1B8;
+    --bg-color-main: #f5f5f5;
+    --bg-color-second: #ffffff;
+    --bg-for-button: #f5f4fa;
+    --bg-for-footer: #2f303a;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --main-font: "Roboto", sans-serif;
+  }*/
 .link {
   text-decoration: none;
 }
@@ -149,7 +149,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 .modal-form-title {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -161,7 +160,6 @@ body {
   color: #212121;
   margin-bottom: 12px;
 }
-
 .modal-form-icon {
   position: absolute;
   display: block;
@@ -172,7 +170,6 @@ body {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal-form-input {
   width: 100%;
   height: 40px;
@@ -181,33 +178,26 @@ body {
   padding-left: 42px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-form-input-wrapper {
-  position: relative;
-  display: block;
-  margin-top: 4px;
-}
-
-.modal-form-field {
-  margin-bottom: 10px;
-}
-
-.modal-form-comment {
-  margin-bottom: 20px;
-}
-
-.modal-form-input:focus,
-.modal-form-msg:focus {
+.modal-form-input:focus {
   outline: none;
   border: 1px solid;
   border-color: #2196f3;
   cursor: pointer;
 }
-
+.modal-form-input-wrapper {
+  position: relative;
+  display: block;
+  margin-top: 4px;
+}
+.modal-form-field {
+  margin-bottom: 10px;
+}
+.modal-form-comment {
+  margin-bottom: 20px;
+}
 .modal-form-input:focus + .modal-form-icon {
   fill: #2196f3;
 }
-
 .modal-form-msg {
   display: block;
   width: 100%;
@@ -219,7 +209,12 @@ body {
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.modal-form-msg:focus {
+  outline: none;
+  border: 1px solid;
+  border-color: #2196f3;
+  cursor: pointer;
+}
 .modal-form-policy-txt::before {
   content: "";
   display: inline-flex;
@@ -229,7 +224,6 @@ body {
   margin-right: 7px;
   border-radius: 2px;
 }
-
 .modal-form-policy:checked + .modal-form-policy-txt::before {
   background-color: #2196f3;
   border: 0px #2196f3;
@@ -237,11 +231,9 @@ body {
   background-repeat: no-repeat;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal-form-policy:focus + .modal-form-policy-txt::before {
   outline: #2196f3 auto 2px;
 }
-
 .modal-form-text {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
@@ -249,9 +241,8 @@ body {
   letter-spacing: 0.01em;
   color: rgb(117, 117, 117);
 }
-
 .modal-form-policy-txt,
-.modal-policy-link {
+.modal-form .modal-policy-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,21 +253,18 @@ body {
   color: rgb(117, 117, 117);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-policy-link {
+.modal-form .modal-policy-link {
   margin-bottom: 0px;
   text-decoration-skip-ink: none;
   color: #2196f3;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 7px;
 }
-
-.chek-policy-box {
+.modal-form .chek-policy-box {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
 }
-
 .modal-form-btn {
   display: block;
   margin: 0 auto;
@@ -295,8 +283,7 @@ body {
   padding: 10px 52px;
   border: 1px solid transparent;
 }
-
-.form input:not(:placeholder-shown) {
+.modal-form .form input:not(:placeholder-shown) {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.25;
@@ -312,7 +299,9 @@ body {
   height: 18px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.close-btn:hover .close, .close-btn:focus .close {
+  fill: #2196f3;
+}
 .close-btn {
   position: absolute;
   right: 8px;
@@ -329,10 +318,8 @@ body {
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.close-btn:hover .close,
-.close-btn:focus .close {
-  fill: #2196f3;
+.close-btn:hover {
+  background-color: #f5f5f5;
 }
 
 .is-hidden {

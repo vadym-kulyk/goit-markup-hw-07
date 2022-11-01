@@ -1,16 +1,16 @@
 .link {
-    text-decoration: none;
-  }
-  html {
-    box-sizing: border-box;
-  }
-  
-  .list,
-  .list-marker  {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+  text-decoration: none;
+}
+html {
+  box-sizing: border-box;
+}
+
+.list,
+.list-marker {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 h1,
 h2,
@@ -22,16 +22,15 @@ p {
   margin: 0px;
 }
 
-
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-  body {
-    font-family: $main-font;
-    font-style: normal;
-    letter-spacing: 0.03em;
-    font-family: 'Roboto', sans-serif;
-    color: $primary-text-color;
-  }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+body {
+  font-family: $main-font;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  font-family: 'Roboto', sans-serif;
+  color: $primary-text-color;
+}
