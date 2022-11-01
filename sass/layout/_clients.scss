@@ -20,13 +20,13 @@
     border: 1px solid #afb1b8;
     border-radius: 4px;
     color: #afb1b8;
-    transition: border-color 250ms var(--timing-function), fill 250ms var(--timing-function),
-      color 250ms var(--timing-function), background-color 250ms var(--timing-function);
+    transition: border-color 250ms $timing-function, fill 250ms $timing-function,
+      color 250ms $timing-function, background-color 250ms $timing-function;
 
     &:hover,
     &:focus {
-      color: var(--accent-color);
-      border-color: var(--accent-color);
+      color: $accent-color;
+      border-color: $accent-color;
     }
   }
 
@@ -34,11 +34,11 @@
     width: 106px;
     height: 60px;
     fill: #afb1b8;
-    transition: fill 250ms var(--timing-function);
+    transition: fill 250ms $timing-function;
 
     .clients__link:hover &,
     .clients__link:focus & {
-      fill: var(--accent-color);
+      fill: $accent-color;
     }
   }
 }

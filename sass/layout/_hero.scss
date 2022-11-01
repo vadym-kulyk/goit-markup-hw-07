@@ -1,6 +1,6 @@
 
 .hero {
-    background-color: var(--bg-for-footer);
+    background-color: $bg-for-footer;
     text-align: center;
     align-items: center;
     padding-top: 200px;
@@ -17,7 +17,7 @@
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
-        color: var(--bg-color-second);
+        color: $bg-color-second;
         /* or 136% */
       
         letter-spacing: 0.06em;
@@ -29,8 +29,8 @@
       }
       &-button {
         font-family: inherit;
-        color: var(--bg-color-second);
-        background-color: var(--accent-color);
+        color: $bg-color-second;
+        background-color: $accent-color;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.875;

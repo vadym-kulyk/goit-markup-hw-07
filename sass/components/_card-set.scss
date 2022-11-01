@@ -35,7 +35,7 @@
 .portfolio-card__link {
   display: block;
   text-decoration: none;
-  transition: box-shadow 250ms var(--timing-function);
+  transition: box-shadow 250ms $timing-function;
 
 
 
@@ -50,7 +50,7 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   text-decoration: none;
   margin-bottom: 4px;
 }
@@ -58,7 +58,7 @@
 .portfolio-card__type {
   font-size: 16px;
   line-height: 1.875;
-  color: var(--second-color);
+  color: $second-color;
   text-decoration: none;
   letter-spacing: 0.03em;
 }

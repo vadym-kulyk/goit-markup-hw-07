@@ -6,14 +6,14 @@
   
    
    .modal-form-title {
-     font-family: var(--main-font);
+     font-family: $main-font;
      font-style: normal;
      font-weight: 700;
      font-size: 20px;
      line-height: 1.15;
      text-align: center;
      letter-spacing: 0.03em;
-     color: var(--primary-text-color);
+     color: $primary-text-color;
      margin-bottom: 12px;
      }
      
@@ -27,7 +27,7 @@
        top: 50%;
        left: 12px;
       transform: translateY(-50%);
-      transition: fill 250ms var(--timing-function);
+      transition: fill 250ms $timing-function;
      }
      
      .modal-form-input {
@@ -36,7 +36,7 @@
        border: 1px solid rgba(33, 33, 33, 0.2);
        border-radius: 4px;
        padding-left: 42px;  
-       transition: border-color 250ms var(--timing-function);
+       transition: border-color 250ms $timing-function;
      }
      
      .modal-form-input-wrapper {
@@ -57,12 +57,12 @@
      .modal-form-msg:focus {
        outline: none;
        border: 1px solid;
-       border-color: var(--accent-color); 
+       border-color: $accent-color; 
        cursor: pointer;
      }
      
      .modal-form-input:focus + .modal-form-icon {
-       fill: var(--accent-color);
+       fill: $accent-color;
      }
      
      .modal-form-msg {
@@ -74,7 +74,7 @@
        padding: 12px 16px;
        margin-top: 4px;
        resize: none;
-       transition: border-color 250ms var(--timing-function);
+       transition: border-color 250ms $timing-function;
      }
      
      .modal-form-policy-txt::before{
@@ -88,19 +88,19 @@
      }
      
      .modal-form-policy:checked + .modal-form-policy-txt::before{
-      background-color: var(--accent-color);
-      border: 0px var(--accent-color);
+      background-color: $accent-color;
+      border: 0px $accent-color;
        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='15' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
        background-repeat: no-repeat;
-       transition: all 250ms var(--timing-function);
+       transition: all 250ms $timing-function;
        }
      
      .modal-form-policy:focus + .modal-form-policy-txt::before {
-      outline: var(--accent-color) auto 2px; 
+      outline: $accent-color auto 2px; 
      }
      
      .modal-form-text {
-     font-family: var(--main-font);
+     font-family: $main-font;
      font-size: 12px;
      line-height: 1.17;
      letter-spacing: 0.01em;
@@ -114,20 +114,20 @@
        justify-content: center;
        align-items: center;
      
-     font-family: var(--main-font);
+     font-family: $main-font;
      font-size: 14px;
      line-height: 1.71;
      letter-spacing: 0.03em;
      color:rgba(117, 117, 117, 1);
      ;
-     transition: all 250ms var(--timing-function);
+     transition: all 250ms $timing-function;
      }
      
      .modal-policy-link {
        margin-bottom: 0px;
        text-decoration-skip-ink:none;
-       color: var(--accent-color);
-       transition: all 250ms var(--timing-function);
+       color: $accent-color;
+       transition: all 250ms $timing-function;
        margin-left: 7px;
      }
      
@@ -145,11 +145,11 @@
        line-height: 1.88;
        align-items: center;
        letter-spacing: 0.06em;
-       color: var(--bg-color-second);
+       color: $bg-color-second;
        min-width: 200px;
        height: 50px;
        cursor: pointer;
-       background: var(--accent-color);
+       background: $accent-color;
        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
        border-radius: 4px;
        padding: 10px 52px;
@@ -157,7 +157,7 @@
      }
      
      .form input:not(:placeholder-shown) {
-     font-family: var(--main-font);
+     font-family: $main-font;
      font-size: 16px;
      line-height: 1.25;
      display: flex;
@@ -172,7 +172,7 @@
     fill: #000000;
     width: 18px;
     height: 18px;
-    transition: fill 250ms var(--timing-function);
+    transition: fill 250ms $timing-function;
   }
   
   .close-btn {
@@ -182,20 +182,20 @@
      width: 30px;
      height: 30px;
      border: 1px solid rgba(0, 0, 0, 0.1);
-     background-color: var(--bg-color-main);
+     background-color: $bg-color-main;
      box-sizing: border-box;
      border-radius: 50%;
      cursor: pointer;
      display: flex;
      justify-content: center;
      align-items: center;
-     transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
+     transition: background-color 250ms $timing-function, fill 250ms $timing-function;
    }
    
    
   .close-btn:hover  .close,
   .close-btn:focus .close {
-    fill: var(--accent-color)
+    fill: $accent-color
     
   }
   

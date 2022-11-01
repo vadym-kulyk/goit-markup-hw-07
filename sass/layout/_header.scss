@@ -1,5 +1,5 @@
 .header {
-  background: var(--bg-color-second);
+  background: $bg-color-second;
   border-bottom: 1px solid #ececec;
 
   &-container {
@@ -12,9 +12,9 @@
     align-items: center;
   }
   &.logo {
-    color: var(--accent-color);
+    color: $accent-color;
     text-decoration: none;
-    font-family: 'Raleway', sans-serif;
+    font-family: $main-font;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -23,7 +23,7 @@
     padding: 24px 0px;
   }
   &-logo__color {
-    color: var(--primary-text-color);
+    color: $primary-text-color;
   }
 }
 .menu {
@@ -34,20 +34,20 @@
   align-items: center;
 
   &__link {
-    color: var(--primary-text-color);
+    color: $primary-text-color;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
     padding: 32px 0px;
-    transition: color 250ms var(--timing-function);
+    transition: color 250ms $timing-function;
     position: relative;
 
     &:hover,
     &:focus,
     &:active {
-      color: var(--accent-color);
+      color: $accent-color;
     }
 
     &.current::after {
@@ -65,7 +65,7 @@
 }
 
 .current {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .contacts {
@@ -79,27 +79,27 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    color: var(--second-color);
+    color: $second-color;
     padding: 32px 0px;
     display: flex;
     align-items: center;
-    transition: color 250ms var(--timing-function), fill 250ms var(--timing-function);
+    transition: color 250ms $timing-function, fill 250ms $timing-function;
 
     &:hover,
     &:focus,
     &:active {
-      color: var(--accent-color);
+      color: $accent-color;
     }
   }
 
   &-icon {
     margin-right: 10px;
-    fill: #757575;
-    transition: fill 250ms var(--timing-function);
+    fill: $second-color;
+    transition: fill 250ms $timing-function;
 
     .contacts__item:hover &,
     .contacts__item:focus & {
-      fill: var(--accent-color);
+      fill: $accent-color;
     }
   }
 }
