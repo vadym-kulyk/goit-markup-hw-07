@@ -6,14 +6,35 @@
     padding-right: 15px;
 
 
-    .page-header-& {
+    .header-container {
         display: flex;
         align-items: center;
       }
       
-    .footer-& {
+    .footer-container {
         display: flex;
         align-items: baseline;
        }
     
   } 
+
+
+  .hero {
+    background-color: var(--bg-for-footer);
+    text-align: center;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+      url("../images/hero-bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      max-width: 1600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
