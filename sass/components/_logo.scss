@@ -1,0 +1,29 @@
+.logo {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-right: 93px;
+    padding: 24px 0px;
+  }
+  
+  .footer-logo {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+  
+  .footer-logo__color1 {
+    color: var(--accent-color);
+  }
+  
+  .footer-logo__color2 {
+    color: var(--bg-color-second);
+  }
