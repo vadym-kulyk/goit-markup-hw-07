@@ -6,22 +6,23 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
 
-.header-logo {
-  margin-right: 93px;
-  padding: 24px 0px;
-
-  &__color {
+  &__color1 {
     color: $primary-text-color;
+  }
+  &__color2 {
+    color: $bg-color-second;
   }
 }
 
-.footer-logo {
+.header__logo {
+  margin-right: 93px;
+  padding: 24px 0px;
+ 
+}
+
+.footer__logo {
   margin-right: 0px;
   padding: 0px;
 
-  &__color {
-    color: $bg-color-second;
-  }
 }

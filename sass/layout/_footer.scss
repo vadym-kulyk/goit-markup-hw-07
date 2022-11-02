@@ -70,7 +70,7 @@
     }
   }
 
-  &-container {
+  &__container {
     display: flex;
     align-items: baseline;
   }
@@ -100,13 +100,11 @@
     margin-left: 12px;
   }
 
-  &-logo {
+  &__logo {
     margin-right: 0px;
     padding: 0px;
 
-    &__color {
-      color: $bg-color-second;
-    }
+    
   }
 }
 .follow-us {

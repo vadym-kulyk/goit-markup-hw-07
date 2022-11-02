@@ -29,8 +29,7 @@ html {
   box-sizing: border-box;
 }
 
-.list,
-.list-marker {
+ul, li {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -67,11 +66,11 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-.container .header-container {
+.container .header__container {
   display: flex;
   align-items: center;
 }
-.container .footer-container {
+.container .footer__container {
   display: flex;
   align-items: baseline;
 }
@@ -114,21 +113,21 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+.logo__color1 {
+  color: #212121;
+}
+.logo__color2 {
+  color: #ffffff;
+}
 
-.header-logo {
+.header__logo {
   margin-right: 93px;
   padding: 24px 0px;
 }
-.header-logo__color {
-  color: #212121;
-}
 
-.footer-logo {
+.footer__logo {
   margin-right: 0px;
   padding: 0px;
-}
-.footer-logo__color {
-  color: #ffffff;
 }
 
 .backdrop {
@@ -455,7 +454,7 @@ button:hover, button:active, button:focus {
   background: #ffffff;
   border-bottom: 1px solid #ececec;
 }
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
@@ -473,9 +472,6 @@ button:hover, button:active, button:focus {
   letter-spacing: 0.03em;
   margin-right: 93px;
   padding: 24px 0px;
-}
-.header-logo__color {
-  color: #212121;
 }
 
 .menu {
@@ -499,7 +495,10 @@ button:hover, button:active, button:focus {
 .menu__link:hover, .menu__link:focus, .menu__link:active {
   color: #2196f3;
 }
-.menu__link.current::after {
+.menu__link--current {
+  color: #2196f3;
+}
+.menu__link--current::after {
   display: block;
   position: absolute;
   bottom: 0px;
@@ -509,10 +508,6 @@ button:hover, button:active, button:focus {
   height: 4px;
   background-color: rgb(33, 150, 243);
   border-radius: 2px;
-}
-
-.current {
-  color: #2196f3;
 }
 
 .contacts {
@@ -839,7 +834,7 @@ button:hover, button:active, button:focus {
   width: 20px;
   height: 20px;
 }
-.footer-container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
@@ -866,12 +861,9 @@ button:hover, button:active, button:focus {
   border: 1px solid transparent;
   margin-left: 12px;
 }
-.footer-logo {
+.footer__logo {
   margin-right: 0px;
   padding: 0px;
-}
-.footer-logo__color {
-  color: #ffffff;
 }
 
 .follow-us {
