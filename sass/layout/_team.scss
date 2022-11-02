@@ -12,11 +12,10 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
       border-radius: 0px 0px 4px 4px;
     }
-  }
-  &__member-card {
+    &__card {
     padding: 30px;
   }
-  &__member-title {
+   &__title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -26,7 +25,7 @@
 
     margin-bottom: 10px;
   }
-  &__position {
+  &__text {
     font-size: 16px;
     line-height: 1.18;
     /* identical to box height */
@@ -35,6 +34,9 @@
     margin-bottom: 16px;
     color: $second-color;
   }
+  }
+ 
+  
 }
 
 .social-list {

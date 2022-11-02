@@ -11,17 +11,7 @@
     display: flex;
     align-items: center;
   }
-  &.logo {
-    color: $accent-color;
-    text-decoration: none;
-    font-family: $main-font;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    margin-right: 93px;
-    padding: 24px 0px;
-  }
+  
  
 }
 .menu {
@@ -71,7 +61,7 @@
   margin-left: auto;
   column-gap: 50px;
 
-  &__item {
+  &__link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -90,13 +80,13 @@
     }
   }
 
-  &-icon {
+  &__icon {
     margin-right: 10px;
     fill: $second-color;
     transition: fill 250ms $timing-function;
 
-    .contacts__item:hover &,
-    .contacts__item:focus & {
+    .contacts__link:hover &,
+    .contacts__link:focus & {
       fill: $accent-color;
     }
   }
